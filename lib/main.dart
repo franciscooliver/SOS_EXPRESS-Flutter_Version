@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sos_express_flutter_version/app_consts.dart';
 import 'package:sos_express_flutter_version/pages/introScreen/intro_screen.dart';
 
 void main() => runApp(MyApp());
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'SOS EXPRESS',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: appPrimaryColor
       ),
       home: IntroScreen()
     );
